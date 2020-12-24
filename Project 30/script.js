@@ -22,5 +22,12 @@ speedEl.addEventListener('change', () => {
 })
 
 inputEl.addEventListener('keyup', () => {
-    text = inputEl.value
+    let msg = inputEl.value
+
+    if (msg){
+        text = inputEl.value
+    }
+    else{
+        text = 'Type something!'
+    }
 })
